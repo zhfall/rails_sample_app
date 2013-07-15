@@ -13,17 +13,17 @@ targeting a Cloud Foundry instance, and logging in, the application can be pushe
 $ cf push 
 Using manifest file manifest.yml
 
-Creating rails_sample... OK
+Creating rails-sample... OK
 
-Creating route rails_sample_aa552.cfapps.io... OK
-Binding rails_sample_aa552.cfapps.io to rails_sample... OK
-Creating service rails_postgres... OK
-Binding rails_postgres to rails_sample... OK
-Uploading rails_sample... OK
+Creating route rails-sample_aa552.cfapps.io... OK
+Binding rails-sample_aa552.cfapps.io to rails-sample... OK
+Creating service rails-postgres... OK
+Binding rails-postgres to rails-sample... OK
+Uploading rails-sample... OK
 
-Starting rails_sample... OK
+Starting rails-sample... OK
 ...
-Checking rails_sample...
+Checking rails-sample...
 Staging in progress...
 ...
   1/1 instances: 1 running
@@ -32,10 +32,10 @@ OK
 $ cf app
 Using manifest file manifest.yml
 
-rails_sample: running
+rails-sample: running
   usage: 256M × 1 instance
-  urls: rails_sample-e3605.cfapps.io
-  services: rails_postgres
+  urls: rails-sample-e3605.cfapps.io
+  services: rails-postgres
 ~~~
 
 The application will be pushed using settings in the provided `manifest.yml` file. The settings include some random 

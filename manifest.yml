@@ -1,14 +1,14 @@
 ---
 applications:
-- name: rails_sample
+- name: rails-sample
   memory: 256M
   instances: 1
-  host: rails_sample_${random-word}
+  host: rails-sample-${random-word}
   domain: cfapps.io
   path: .
   command: bundle exec rake db:migrate && bundle exec rails s -p $PORT
   services:
-    rails_postgres:
+    rails-postgres:
       label: elephantsql
       provider: elephantsql
       version: n/a
