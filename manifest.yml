@@ -4,7 +4,7 @@ applications:
   memory: 256M
   instances: 1
   host: rails-sample-${random-word}
-  domain: cfapps.io
+  domain: a1-app.cf-app.com
   path: .
   command: bundle exec rake db:migrate && bundle exec rails s -p $PORT
   services:
@@ -13,3 +13,10 @@ applications:
       provider: elephantsql
       version: n/a
       plan: turtle
+    newrelic:
+      label: newrelic-dev
+      provider: newrelic
+      version: n/a
+      plan: standard
+  env:
+    NEW_RELIC_HOST: staging-collector.newrelic.com

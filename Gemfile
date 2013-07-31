@@ -7,6 +7,8 @@ gem 'sqlite3', '1.3.4'
 gem "pg", "~> 0.15.1"
 gem "cf-autoconfig", "~> 0.2.1"
 
+gem 'newrelic_rpm'
+
 group :development do
   gem 'rspec-rails', '2.6.1'
   gem 'annotate', '2.4.0'
