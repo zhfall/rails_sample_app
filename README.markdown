@@ -23,22 +23,13 @@ Uploading rails-sample... OK
 
 Starting rails-sample... OK
 ...
-Checking rails-sample...
-Staging in progress...
+Checking status of app 'rails-sample'...
 ...
-  1/1 instances: 1 running
-OK
-
-$ cf app
-Using manifest file manifest.yml
-
-rails-sample: running
-  usage: 256M × 1 instance
-  urls: rails-sample-e3605.cfapps.io
-  services: rails-postgres
+  1 of 1 instances running (1 running)
+Push successful! App 'rails-sample' available at http://rails-sample-xxxxx.cfapps.io
 ~~~
 
 The application will be pushed using settings in the provided `manifest.yml` file. The settings include some random 
-characters in the host to make sure the URL for the app is unique in the Cloud Foundry environment. The output of the
-`cf app` command shows the URL that was assigned. Using the provided URL in the `urls` field displayed, you can browse 
+characters in the host to make sure the URL for the app is unique in the Cloud Foundry environment. The last line of the `cf push`
+command shows the URL that was assigned. Using the provided URL in the `urls` field displayed, you can browse 
 to the running application.
