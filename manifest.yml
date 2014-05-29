@@ -8,13 +8,5 @@ applications:
   path: .
   command: bundle exec rake db:migrate && bundle exec rails s -p $PORT
   services:
-    rails-postgres:
-      label: elephantsql
-      provider: elephantsql
-      version: n/a
-      plan: turtle
-    newrelic:
-      label: newrelic
-      provider: newrelic
-      version: n/a
-      plan: standard
+    - rails-postgres
+    - newrelic
