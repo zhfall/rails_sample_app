@@ -6,7 +6,7 @@ This sample has been modified to run on Cloud Foundry. The `cf-autoconfig` gem w
 
 ## Running the application on Cloud Foundry
 
-After installing in the 'cf' [command-line interface for Cloud Foundry](http://docs.cloudfoundry.com/docs/using/managing-apps/cf/),
+After installing in the 'cf' [command-line interface for Cloud Foundry](http://docs.cloudfoundry.org/devguide/installcf/),
 targeting a Cloud Foundry instance, and logging in, the application can be pushed using these commands:
 
 First, view a list of services and plans available in your Cloud Foundry instance: 
