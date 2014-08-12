@@ -45,7 +45,7 @@ OK
 Now push the application: 
 
 ~~~
-$ cf push --random-route
+$ cf push APP-NAME --random-route
 Using manifest file manifest.yml
 
 Updating app rails-sample
