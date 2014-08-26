@@ -6,6 +6,8 @@ gem 'will_paginate', '3.0.pre2'
 gem 'sqlite3', '1.3.4'
 gem "pg", "~> 0.15.1"
 gem "cf-autoconfig", "~> 0.2.1"
+gem 'rails_12factor', group: :production
+ruby '2.0.0'
 
 group :development do
   gem 'rspec-rails', '2.6.1'
